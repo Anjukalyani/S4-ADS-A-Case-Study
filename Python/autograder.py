@@ -114,7 +114,10 @@ def calculate_pages_alignment(reader, target_pages=5):
 # set up script
 
 # get Files
-folder = 'casestudy_1'
+base_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.dirname(base_dir)
+
+folder = os.path.join(project_root, 'casestudy_1')
 entries = os.listdir(folder)
 print("All Files: ", entries)
 full_paths = [os.path.join(folder, entry) for entry in entries if entry.endswith('.pdf')]
