@@ -1,4 +1,4 @@
-name: Automatic Casestudy Grading
+name: Auto Case Study Grading
 
 on:
   workflow_dispatch:
@@ -8,7 +8,7 @@ permissions:
 
 jobs:
   release:
-    name: Start Auto Grading
+    name: Auto Grading
     strategy:
       fail-fast: false
       matrix:
